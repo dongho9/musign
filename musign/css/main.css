@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap'); 
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+}
+section > h2{
+    display: none;
+}
+@font-face {
+    font-family: 'handel gothic';
+    src: url(../font/handel\ gothic.ttf) format('truetype');
+   }
+.en{
+    font-family: 'handel gothic', sans-serif;
+}
+.en_s{  
+    font-family: 'Dancing Script', cursive;
+}
+
+/* header서식 */
+.innerHeader{
+    max-width: 1720px;
+    height: 110px;
+    margin: 0 auto;
+    line-height: 110px; 
+}
+.logo{
+    float: left;
+    width: 150px;
+    transform: translateY(8px);
+}
+h1 a{
+    display: block;
+    width: 100%;
+}
+h1 a img{
+    width: 100%;
+}
+.mainMenu{
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+span.bar{
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 0%;
+    height: 3px;
+    background-color: #e7e7e7;
+    transition: all 0.5s;
+}
+.gnb{
+    float: left;
+}
+.gnb li{
+    float: left;
+    margin: 0 20px;
+}
+.gnb li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #555;
+    font-size: 14px ;
+}
+.sns{
+    float: left;
+    margin-left: 300px;
+}
+.sns li{
+    float: left;
+}
+.sns li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.sns li a img{
+    vertical-align: middle;
+}
+/* main서식 */
+.visual{
+    max-width: 1720px;
+    margin: 0 auto;
+    overflow: hidden;
+    /* 자식요소 float값 줄시 부모요소가 높이 값 상실하기때문에 overflow:hidden 걸어주기 */
+} 
+.mainImg{
+    float: left;
+    width: 50%;
+}
+.mainImg img{
+    width: 90%;
+}
+.mainTxt{
+    float: left;
+    width: 50%;
+    margin-top: 180px;
+}
+.mainTxt .tit{
+    font-size: 72px;
+}
+.mainTxt .en_s{
+    margin-bottom: 10px;
+}
+.gray{
+    color: #ccc;
+}
+/* 타이틀, 텍스트, 더보기 버튼 공통서식 */
+.tit{
+    font-size: 62px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.tit span{
+    display: block;
+}
+.tit span b{
+    font-style: normal;
+}
+.tit .en_s{
+    font-size: 22px;
+    font-weight: normal;
+}
+.txt{
+    padding: 50px 0 0 70px;
+}
+.txt p{
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.txt p b{
+    font-weight: normal;
+}
+.moreBtn{
+    position: relative;
+    transform: skewX(-15deg) translateX(5px);
+    transition: all 0.15s;
+    display: inline-block;
+    margin-top: 20px;   
+    padding-left: 45px;
+    font-size: 14px;
+}
+.moreBtn::before{
+    content: "";
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    background-color: #333;
+    display: inline;
+    left: 0;
+    top: 52%;
+}
+.moreBtn:hover, .moreBtn:focus{
+    transform: translate3d(0, 0, 0) skewY(0deg);
+    font-weight: bold;
+}
+/* section.journal */
+.journal{
+    position: relative;
+    padding: 190px 0px 120px;
+}
+.scroll{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    writing-mode: vertical-rl;
+    /* 내용이 세로로 표시되며, 오른쪽에서 왼쪽으로 텍스트가 진행 */
+    padding-top: 90px;
+    text-transform: uppercase;
+}
+.scroll::before{
+    content: '';
+    position: absolute;
+    height: 75px;
+    width: 1px;
+    background: #333;
+    top: 0;
+    left: 4px;
+}
+/* section안에 .inner(공통 넓이 가이드) .box(플루트) */
+.inner{
+    width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.box{
+    width: 50%;
+    float: left;
+}
+.box img{
+    padding-top: 100px;
+    vertical-align: middle;
+}
+.box ul{
+    border-top: 1px solid #e6e6e6;
+    padding-top: 40px;
+}
+.box .tit{
+    margin-bottom: 40px;
+}
+.box ul li{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.box ul li h3{
+    float: left;
+    width: 22%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.box ul li p{
+    float: left;
+    width: 78%;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #888;
+    line-height: 18px;
+}
+.box .moreBtn{
+    clear:both;
+    margin-left: 22%;
+}
+.service .txt{
+    padding: 0;
+}
+.service .txt p{
+}
+.service .moreBtn{
+    margin-left: 0;
+}
