@@ -1,0 +1,22 @@
+@charset "utf-8";
+@media screen and (max-width: 1720px){ /*1720px부터 1401까지*/
+    .innerHeader{
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .sns{
+        margin-left: 200px;
+    }
+    .visual{
+        max-width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    section.visual .mainTxt{
+        margin-top: 150px;
+    }
+    section.visual .mainTxt .tit{
+        font-size: 62px;
+    }
+}
